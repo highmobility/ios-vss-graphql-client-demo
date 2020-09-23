@@ -1,5 +1,5 @@
 # hm-ios-vss-graphql-client-demo
-iOS app that let's you choose what VSS datapoints to fetch with GraphQL
+iOS app that lets you choose what VSS datapoints to fetch with GraphQL
 
 
 To run: 
