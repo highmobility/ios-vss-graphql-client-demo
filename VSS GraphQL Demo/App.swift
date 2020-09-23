@@ -6,12 +6,15 @@
 //
 
 import SwiftUI
+import AutoGraphQL
+import Alamofire
 
-@main
-struct hm_vss_client_demoApp: App {
+
+@main struct hm_vss_client_demoApp: App {
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SendingView()
         }
     }
 }

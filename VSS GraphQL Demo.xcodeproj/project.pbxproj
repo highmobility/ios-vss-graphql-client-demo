@@ -3,23 +3,34 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		20BFD5922518A3E400547C66 /* hm_vss_client_demoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BFD5912518A3E400547C66 /* hm_vss_client_demoApp.swift */; };
-		20BFD5942518A3E400547C66 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BFD5932518A3E400547C66 /* ContentView.swift */; };
+		203A126A2518CF3900A6BF2A /* Datapoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203A12692518CF3900A6BF2A /* Datapoint.swift */; };
+		20B17F502519E1DC00B1D7CF /* SendButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B17F4F2519E1DB00B1D7CF /* SendButton.swift */; };
+		20B17F5B251A433C00B1D7CF /* AutoGraphQL in Frameworks */ = {isa = PBXBuildFile; productRef = 20B17F5A251A433C00B1D7CF /* AutoGraphQL */; };
+		20B17F60251A9A4B00B1D7CF /* BatteryManagementRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B17F5F251A9A4B00B1D7CF /* BatteryManagementRequest.swift */; };
+		20B17F63251A9CDF00B1D7CF /* VSS Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B17F62251A9CDF00B1D7CF /* VSS Models.swift */; };
+		20BFD5922518A3E400547C66 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BFD5912518A3E400547C66 /* App.swift */; };
+		20BFD5942518A3E400547C66 /* SendingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BFD5932518A3E400547C66 /* SendingView.swift */; };
 		20BFD5962518A3E500547C66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20BFD5952518A3E500547C66 /* Assets.xcassets */; };
 		20BFD5992518A3E500547C66 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20BFD5982518A3E500547C66 /* Preview Assets.xcassets */; };
+		20BFD5A62518A74600547C66 /* VSSGraphQL in Frameworks */ = {isa = PBXBuildFile; productRef = 20BFD5A52518A74600547C66 /* VSSGraphQL */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		20BFD58E2518A3E400547C66 /* hm-vss-client-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hm-vss-client-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		20BFD5912518A3E400547C66 /* hm_vss_client_demoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hm_vss_client_demoApp.swift; sourceTree = "<group>"; };
-		20BFD5932518A3E400547C66 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		203A12692518CF3900A6BF2A /* Datapoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datapoint.swift; sourceTree = "<group>"; };
+		20B17F4F2519E1DB00B1D7CF /* SendButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendButton.swift; sourceTree = "<group>"; };
+		20B17F5F251A9A4B00B1D7CF /* BatteryManagementRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryManagementRequest.swift; sourceTree = "<group>"; };
+		20B17F62251A9CDF00B1D7CF /* VSS Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VSS Models.swift"; sourceTree = "<group>"; };
+		20BFD58E2518A3E400547C66 /* VSS GraphQL Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VSS GraphQL Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20BFD5912518A3E400547C66 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		20BFD5932518A3E400547C66 /* SendingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendingView.swift; sourceTree = "<group>"; };
 		20BFD5952518A3E500547C66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20BFD5982518A3E500547C66 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		20BFD59A2518A3E500547C66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20BFD5AB2518A85000547C66 /* VSS GraphQL Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "VSS GraphQL Demo.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +38,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20B17F5B251A433C00B1D7CF /* AutoGraphQL in Frameworks */,
+				20BFD5A62518A74600547C66 /* VSSGraphQL in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,7 +49,7 @@
 		20BFD5852518A3E400547C66 = {
 			isa = PBXGroup;
 			children = (
-				20BFD5902518A3E400547C66 /* hm-vss-client-demo */,
+				20BFD5902518A3E400547C66 /* VSS GraphQL Demo */,
 				20BFD58F2518A3E400547C66 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,21 +57,26 @@
 		20BFD58F2518A3E400547C66 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				20BFD58E2518A3E400547C66 /* hm-vss-client-demo.app */,
+				20BFD58E2518A3E400547C66 /* VSS GraphQL Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		20BFD5902518A3E400547C66 /* hm-vss-client-demo */ = {
+		20BFD5902518A3E400547C66 /* VSS GraphQL Demo */ = {
 			isa = PBXGroup;
 			children = (
-				20BFD5912518A3E400547C66 /* hm_vss_client_demoApp.swift */,
-				20BFD5932518A3E400547C66 /* ContentView.swift */,
+				20BFD5AB2518A85000547C66 /* VSS GraphQL Demo.entitlements */,
+				20BFD5912518A3E400547C66 /* App.swift */,
+				20BFD5932518A3E400547C66 /* SendingView.swift */,
+				20B17F4F2519E1DB00B1D7CF /* SendButton.swift */,
+				203A12692518CF3900A6BF2A /* Datapoint.swift */,
+				20B17F62251A9CDF00B1D7CF /* VSS Models.swift */,
+				20B17F5F251A9A4B00B1D7CF /* BatteryManagementRequest.swift */,
 				20BFD5952518A3E500547C66 /* Assets.xcassets */,
 				20BFD59A2518A3E500547C66 /* Info.plist */,
 				20BFD5972518A3E500547C66 /* Preview Content */,
 			);
-			path = "hm-vss-client-demo";
+			path = "VSS GraphQL Demo";
 			sourceTree = "<group>";
 		};
 		20BFD5972518A3E500547C66 /* Preview Content */ = {
@@ -72,9 +90,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		20BFD58D2518A3E400547C66 /* hm-vss-client-demo */ = {
+		20BFD58D2518A3E400547C66 /* VSS GraphQL Demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 20BFD59D2518A3E500547C66 /* Build configuration list for PBXNativeTarget "hm-vss-client-demo" */;
+			buildConfigurationList = 20BFD59D2518A3E500547C66 /* Build configuration list for PBXNativeTarget "VSS GraphQL Demo" */;
 			buildPhases = (
 				20BFD58A2518A3E400547C66 /* Sources */,
 				20BFD58B2518A3E400547C66 /* Frameworks */,
@@ -84,9 +102,13 @@
 			);
 			dependencies = (
 			);
-			name = "hm-vss-client-demo";
+			name = "VSS GraphQL Demo";
+			packageProductDependencies = (
+				20BFD5A52518A74600547C66 /* VSSGraphQL */,
+				20B17F5A251A433C00B1D7CF /* AutoGraphQL */,
+			);
 			productName = "hm-vss-client-demo";
-			productReference = 20BFD58E2518A3E400547C66 /* hm-vss-client-demo.app */;
+			productReference = 20BFD58E2518A3E400547C66 /* VSS GraphQL Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -103,7 +125,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 20BFD5892518A3E400547C66 /* Build configuration list for PBXProject "hm-vss-client-demo" */;
+			buildConfigurationList = 20BFD5892518A3E400547C66 /* Build configuration list for PBXProject "VSS GraphQL Demo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -112,11 +134,15 @@
 				Base,
 			);
 			mainGroup = 20BFD5852518A3E400547C66;
+			packageReferences = (
+				20BFD5A42518A74600547C66 /* XCRemoteSwiftPackageReference "vss-graphql-client-swift" */,
+				20B17F59251A433C00B1D7CF /* XCRemoteSwiftPackageReference "AutoGraph" */,
+			);
 			productRefGroup = 20BFD58F2518A3E400547C66 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				20BFD58D2518A3E400547C66 /* hm-vss-client-demo */,
+				20BFD58D2518A3E400547C66 /* VSS GraphQL Demo */,
 			);
 		};
 /* End PBXProject section */
@@ -138,8 +164,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20BFD5942518A3E400547C66 /* ContentView.swift in Sources */,
-				20BFD5922518A3E400547C66 /* hm_vss_client_demoApp.swift in Sources */,
+				20BFD5942518A3E400547C66 /* SendingView.swift in Sources */,
+				20B17F502519E1DC00B1D7CF /* SendButton.swift in Sources */,
+				20B17F60251A9A4B00B1D7CF /* BatteryManagementRequest.swift in Sources */,
+				20B17F63251A9CDF00B1D7CF /* VSS Models.swift in Sources */,
+				203A126A2518CF3900A6BF2A /* Datapoint.swift in Sources */,
+				20BFD5922518A3E400547C66 /* App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +234,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -258,6 +289,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -267,11 +299,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "VSS GraphQL Demo/VSS GraphQL Demo.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"hm-vss-client-demo/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"VSS GraphQL Demo/Preview Content\"";
 				DEVELOPMENT_TEAM = F42CFRE556;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "hm-vss-client-demo/Info.plist";
+				INFOPLIST_FILE = "VSS GraphQL Demo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -279,6 +312,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "HM.hm-vss-client-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -289,11 +323,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "VSS GraphQL Demo/VSS GraphQL Demo.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"hm-vss-client-demo/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"VSS GraphQL Demo/Preview Content\"";
 				DEVELOPMENT_TEAM = F42CFRE556;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "hm-vss-client-demo/Info.plist";
+				INFOPLIST_FILE = "VSS GraphQL Demo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,6 +336,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "HM.hm-vss-client-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -309,7 +345,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		20BFD5892518A3E400547C66 /* Build configuration list for PBXProject "hm-vss-client-demo" */ = {
+		20BFD5892518A3E400547C66 /* Build configuration list for PBXProject "VSS GraphQL Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				20BFD59B2518A3E500547C66 /* Debug */,
@@ -318,7 +354,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		20BFD59D2518A3E500547C66 /* Build configuration list for PBXNativeTarget "hm-vss-client-demo" */ = {
+		20BFD59D2518A3E500547C66 /* Build configuration list for PBXNativeTarget "VSS GraphQL Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				20BFD59E2518A3E500547C66 /* Debug */,
@@ -328,6 +364,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		20B17F59251A433C00B1D7CF /* XCRemoteSwiftPackageReference "AutoGraph" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/remind101/AutoGraph.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.13.0;
+			};
+		};
+		20BFD5A42518A74600547C66 /* XCRemoteSwiftPackageReference "vss-graphql-client-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/highmobility/vss-graphql-client-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		20B17F5A251A433C00B1D7CF /* AutoGraphQL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 20B17F59251A433C00B1D7CF /* XCRemoteSwiftPackageReference "AutoGraph" */;
+			productName = AutoGraphQL;
+		};
+		20BFD5A52518A74600547C66 /* VSSGraphQL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 20BFD5A42518A74600547C66 /* XCRemoteSwiftPackageReference "vss-graphql-client-swift" */;
+			productName = VSSGraphQL;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 20BFD5862518A3E400547C66 /* Project object */;
 }
