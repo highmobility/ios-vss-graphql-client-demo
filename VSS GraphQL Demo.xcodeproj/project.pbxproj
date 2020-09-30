@@ -7,26 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		203A126A2518CF3900A6BF2A /* Datapoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203A12692518CF3900A6BF2A /* Datapoint.swift */; };
-		20B17F502519E1DC00B1D7CF /* SendButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B17F4F2519E1DB00B1D7CF /* SendButton.swift */; };
+		205417CC2524CC7C00B3AD76 /* URLChangingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205417CB2524CC7C00B3AD76 /* URLChangingView.swift */; };
+		205417D02524D20200B3AD76 /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205417CF2524D20200B3AD76 /* VisualEffectView.swift */; };
+		205C9802252484050010D891 /* GraphQLType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205C9801252484050010D891 /* GraphQLType.swift */; };
+		205C9806252484160010D891 /* GraphQLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205C9805252484160010D891 /* GraphQLRequest.swift */; };
+		205C980A25249EB20010D891 /* ResponseProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205C980925249EB20010D891 /* ResponseProperty.swift */; };
+		205C981A2524A0670010D891 /* MainTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205C98192524A0670010D891 /* MainTable.swift */; };
+		205C981D2524A0910010D891 /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205C981C2524A0910010D891 /* MenuButton.swift */; };
+		205C98202524A0A20010D891 /* SendButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205C981F2524A0A20010D891 /* SendButton.swift */; };
+		205C98232524A0B80010D891 /* TableRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205C98222524A0B80010D891 /* TableRow.swift */; };
+		209B1849251B86E400D84963 /* ChargingInlet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209B1848251B86E400D84963 /* ChargingInlet.swift */; };
+		209B184C251B86F100D84963 /* StateOfCharge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209B184B251B86F100D84963 /* StateOfCharge.swift */; };
+		209B184F251B86FF00D84963 /* BatteryManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209B184E251B86FF00D84963 /* BatteryManagement.swift */; };
+		20AE948525247443005701B7 /* AppContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AE948425247443005701B7 /* AppContext.swift */; };
+		20AE948B25247486005701B7 /* TableRowModelState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AE948A25247486005701B7 /* TableRowModelState.swift */; };
+		20AE948E2524749A005701B7 /* TableRowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AE948D2524749A005701B7 /* TableRowModel.swift */; };
+		20AE94932524753A005701B7 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AE94922524753A005701B7 /* MainView.swift */; };
+		20AE949A25247581005701B7 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AE949925247581005701B7 /* Color+Extensions.swift */; };
 		20B17F5B251A433C00B1D7CF /* AutoGraphQL in Frameworks */ = {isa = PBXBuildFile; productRef = 20B17F5A251A433C00B1D7CF /* AutoGraphQL */; };
-		20B17F60251A9A4B00B1D7CF /* BatteryManagementRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B17F5F251A9A4B00B1D7CF /* BatteryManagementRequest.swift */; };
-		20B17F63251A9CDF00B1D7CF /* VSS Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B17F62251A9CDF00B1D7CF /* VSS Models.swift */; };
 		20BFD5922518A3E400547C66 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BFD5912518A3E400547C66 /* App.swift */; };
-		20BFD5942518A3E400547C66 /* SendingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BFD5932518A3E400547C66 /* SendingView.swift */; };
 		20BFD5962518A3E500547C66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20BFD5952518A3E500547C66 /* Assets.xcassets */; };
 		20BFD5992518A3E500547C66 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20BFD5982518A3E500547C66 /* Preview Assets.xcassets */; };
 		20BFD5A62518A74600547C66 /* VSSGraphQL in Frameworks */ = {isa = PBXBuildFile; productRef = 20BFD5A52518A74600547C66 /* VSSGraphQL */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		203A12692518CF3900A6BF2A /* Datapoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datapoint.swift; sourceTree = "<group>"; };
-		20B17F4F2519E1DB00B1D7CF /* SendButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendButton.swift; sourceTree = "<group>"; };
-		20B17F5F251A9A4B00B1D7CF /* BatteryManagementRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryManagementRequest.swift; sourceTree = "<group>"; };
-		20B17F62251A9CDF00B1D7CF /* VSS Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VSS Models.swift"; sourceTree = "<group>"; };
+		205417CB2524CC7C00B3AD76 /* URLChangingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLChangingView.swift; sourceTree = "<group>"; };
+		205417CF2524D20200B3AD76 /* VisualEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectView.swift; sourceTree = "<group>"; };
+		205C9801252484050010D891 /* GraphQLType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLType.swift; sourceTree = "<group>"; };
+		205C9805252484160010D891 /* GraphQLRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLRequest.swift; sourceTree = "<group>"; };
+		205C980925249EB20010D891 /* ResponseProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseProperty.swift; sourceTree = "<group>"; };
+		205C98192524A0670010D891 /* MainTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTable.swift; sourceTree = "<group>"; };
+		205C981C2524A0910010D891 /* MenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
+		205C981F2524A0A20010D891 /* SendButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendButton.swift; sourceTree = "<group>"; };
+		205C98222524A0B80010D891 /* TableRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableRow.swift; sourceTree = "<group>"; };
+		209B1848251B86E400D84963 /* ChargingInlet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingInlet.swift; sourceTree = "<group>"; };
+		209B184B251B86F100D84963 /* StateOfCharge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateOfCharge.swift; sourceTree = "<group>"; };
+		209B184E251B86FF00D84963 /* BatteryManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryManagement.swift; sourceTree = "<group>"; };
+		20AE948425247443005701B7 /* AppContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContext.swift; sourceTree = "<group>"; };
+		20AE948A25247486005701B7 /* TableRowModelState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableRowModelState.swift; sourceTree = "<group>"; };
+		20AE948D2524749A005701B7 /* TableRowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableRowModel.swift; sourceTree = "<group>"; };
+		20AE94922524753A005701B7 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		20AE949925247581005701B7 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		20BFD58E2518A3E400547C66 /* VSS GraphQL Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VSS GraphQL Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20BFD5912518A3E400547C66 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
-		20BFD5932518A3E400547C66 /* SendingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendingView.swift; sourceTree = "<group>"; };
 		20BFD5952518A3E500547C66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20BFD5982518A3E500547C66 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		20BFD59A2518A3E500547C66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,6 +70,77 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		205C9800252483F50010D891 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				205C9801252484050010D891 /* GraphQLType.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		205C981025249FC70010D891 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				20AE949925247581005701B7 /* Color+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		205C981225249FDA0010D891 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				20BFD5952518A3E500547C66 /* Assets.xcassets */,
+				20BFD59A2518A3E500547C66 /* Info.plist */,
+				20BFD5AB2518A85000547C66 /* VSS GraphQL Demo.entitlements */,
+				20BFD5972518A3E500547C66 /* Preview Content */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		205C98172524A0540010D891 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				205C98192524A0670010D891 /* MainTable.swift */,
+				20AE94922524753A005701B7 /* MainView.swift */,
+				205C981C2524A0910010D891 /* MenuButton.swift */,
+				205C981F2524A0A20010D891 /* SendButton.swift */,
+				205C98222524A0B80010D891 /* TableRow.swift */,
+				205417CB2524CC7C00B3AD76 /* URLChangingView.swift */,
+				205417CF2524D20200B3AD76 /* VisualEffectView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		209B1851251B870C00D84963 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				20AE948825247472005701B7 /* VSS */,
+				20AE948425247443005701B7 /* AppContext.swift */,
+				20AE948A25247486005701B7 /* TableRowModelState.swift */,
+				20AE948D2524749A005701B7 /* TableRowModel.swift */,
+				205C980925249EB20010D891 /* ResponseProperty.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		209B1854251B872300D84963 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				205C9805252484160010D891 /* GraphQLRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		20AE948825247472005701B7 /* VSS */ = {
+			isa = PBXGroup;
+			children = (
+				209B184E251B86FF00D84963 /* BatteryManagement.swift */,
+				209B1848251B86E400D84963 /* ChargingInlet.swift */,
+				209B184B251B86F100D84963 /* StateOfCharge.swift */,
+			);
+			path = VSS;
+			sourceTree = "<group>";
+		};
 		20BFD5852518A3E400547C66 = {
 			isa = PBXGroup;
 			children = (
@@ -65,16 +160,13 @@
 		20BFD5902518A3E400547C66 /* VSS GraphQL Demo */ = {
 			isa = PBXGroup;
 			children = (
-				20BFD5AB2518A85000547C66 /* VSS GraphQL Demo.entitlements */,
+				205C981225249FDA0010D891 /* Assets */,
+				205C981025249FC70010D891 /* Extensions */,
+				209B1851251B870C00D84963 /* Models */,
+				205C9800252483F50010D891 /* Protocols */,
+				209B1854251B872300D84963 /* Requests */,
+				205C98172524A0540010D891 /* Views */,
 				20BFD5912518A3E400547C66 /* App.swift */,
-				20BFD5932518A3E400547C66 /* SendingView.swift */,
-				20B17F4F2519E1DB00B1D7CF /* SendButton.swift */,
-				203A12692518CF3900A6BF2A /* Datapoint.swift */,
-				20B17F62251A9CDF00B1D7CF /* VSS Models.swift */,
-				20B17F5F251A9A4B00B1D7CF /* BatteryManagementRequest.swift */,
-				20BFD5952518A3E500547C66 /* Assets.xcassets */,
-				20BFD59A2518A3E500547C66 /* Info.plist */,
-				20BFD5972518A3E500547C66 /* Preview Content */,
 			);
 			path = "VSS GraphQL Demo";
 			sourceTree = "<group>";
@@ -164,12 +256,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20BFD5942518A3E400547C66 /* SendingView.swift in Sources */,
-				20B17F502519E1DC00B1D7CF /* SendButton.swift in Sources */,
-				20B17F60251A9A4B00B1D7CF /* BatteryManagementRequest.swift in Sources */,
-				20B17F63251A9CDF00B1D7CF /* VSS Models.swift in Sources */,
-				203A126A2518CF3900A6BF2A /* Datapoint.swift in Sources */,
+				209B184F251B86FF00D84963 /* BatteryManagement.swift in Sources */,
+				20AE94932524753A005701B7 /* MainView.swift in Sources */,
+				20AE948525247443005701B7 /* AppContext.swift in Sources */,
+				205417CC2524CC7C00B3AD76 /* URLChangingView.swift in Sources */,
+				205C9802252484050010D891 /* GraphQLType.swift in Sources */,
+				205C980A25249EB20010D891 /* ResponseProperty.swift in Sources */,
+				205C981A2524A0670010D891 /* MainTable.swift in Sources */,
+				209B1849251B86E400D84963 /* ChargingInlet.swift in Sources */,
+				205C981D2524A0910010D891 /* MenuButton.swift in Sources */,
+				205C9806252484160010D891 /* GraphQLRequest.swift in Sources */,
+				205C98232524A0B80010D891 /* TableRow.swift in Sources */,
+				205417D02524D20200B3AD76 /* VisualEffectView.swift in Sources */,
+				209B184C251B86F100D84963 /* StateOfCharge.swift in Sources */,
+				20AE948B25247486005701B7 /* TableRowModelState.swift in Sources */,
+				20AE949A25247581005701B7 /* Color+Extensions.swift in Sources */,
+				205C98202524A0A20010D891 /* SendButton.swift in Sources */,
 				20BFD5922518A3E400547C66 /* App.swift in Sources */,
+				20AE948E2524749A005701B7 /* TableRowModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,12 +403,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "VSS GraphQL Demo/VSS GraphQL Demo.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "VSS GraphQL Demo/Assets/VSS GraphQL Demo.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"VSS GraphQL Demo/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"VSS GraphQL Demo/Assets/Preview Content\"";
 				DEVELOPMENT_TEAM = F42CFRE556;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "VSS GraphQL Demo/Info.plist";
+				INFOPLIST_FILE = "VSS GraphQL Demo/Assets/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -323,12 +427,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "VSS GraphQL Demo/VSS GraphQL Demo.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "VSS GraphQL Demo/Assets/VSS GraphQL Demo.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"VSS GraphQL Demo/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"VSS GraphQL Demo/Assets/Preview Content\"";
 				DEVELOPMENT_TEAM = F42CFRE556;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "VSS GraphQL Demo/Info.plist";
+				INFOPLIST_FILE = "VSS GraphQL Demo/Assets/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
