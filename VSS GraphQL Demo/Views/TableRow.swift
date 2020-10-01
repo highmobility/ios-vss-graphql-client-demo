@@ -24,8 +24,15 @@ struct TableRow<Root>: View {
             if row.children == nil {
                 Group {
                     switch row.state {
+                    case .deselected:
+                        if !context.model.isLoaded {
+                            Image(systemName: "circle")
+                        }
+
                     case .selected:
-                        Image(systemName: "checkmark.circle")
+                        if !context.model.isLoaded {
+                            Image(systemName: "checkmark.circle")
+                        }
 
                     case .loading:
                         ProgressView()
@@ -33,9 +40,6 @@ struct TableRow<Root>: View {
 
                     case .loaded(let value):
                         Text(value)
-
-                    default:
-                        Image(systemName: "circle")
                     }
                 }
                 .foregroundColor(.genivi)
@@ -43,18 +47,20 @@ struct TableRow<Root>: View {
             }
         }
         .onTapGesture {
-            switch row.state {
-            case .deselected:
-                row.state = .selected
+            if !context.model.isLoaded {
+                switch row.state {
+                case .deselected:
+                    row.state = .selected
 
-            case .selected:
-                row.state = .deselected
+                case .selected:
+                    row.state = .deselected
 
-            default:
-                break
+                default:
+                    break
+                }
+
+                context.objectWillChange.send()
             }
-
-            context.objectWillChange.send()
         }
     }
 }

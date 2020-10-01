@@ -116,9 +116,9 @@
 			children = (
 				20AE948825247472005701B7 /* VSS */,
 				20AE948425247443005701B7 /* AppContext.swift */,
-				20AE948A25247486005701B7 /* TableRowModelState.swift */,
-				20AE948D2524749A005701B7 /* TableRowModel.swift */,
 				205C980925249EB20010D891 /* ResponseProperty.swift */,
+				20AE948D2524749A005701B7 /* TableRowModel.swift */,
+				20AE948A25247486005701B7 /* TableRowModelState.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
