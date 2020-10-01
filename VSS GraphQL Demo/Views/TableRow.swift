@@ -17,7 +17,7 @@ struct TableRow<Root>: View {
     var body: some View {
         HStack {
             Text(row.name)
-                .font(Font.system(.body, design: .monospaced).lowercaseSmallCaps())
+                .font(Font.system(size: 14.0, design: .monospaced).lowercaseSmallCaps())
 
             Spacer()
 
