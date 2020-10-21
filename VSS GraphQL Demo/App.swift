@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import VSSGraphQLClient
 
 
 @main struct VSSGraphQLDemoApp: App {
