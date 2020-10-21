@@ -5,10 +5,9 @@
 //  Created by Mikk Rätsep on 30.09.20.
 //
 
-import Alamofire
-import AutoGraphQL
 import Combine
 import Foundation
+import VSSGraphQLClient
 
 
 class AppContext: ObservableObject {
@@ -17,41 +16,63 @@ class AppContext: ObservableObject {
     @Published var urlStr: String = "http://localhost:4000/"
 
 
-    let model = TableRowModel(keyPath: \BatteryManagement.self, name: "batteryManagement", children: [
-        TableRowModel(keyPath: \BatteryManagement.accumulatedChargedEnergy, name: "accumulatedChargedEnergy"),
-        TableRowModel(keyPath: \BatteryManagement.accumulatedConsumedEnergy, name: "accumulatedConsumedEnergy"),
-        TableRowModel(keyPath: \BatteryManagement.batteryCapacity, name: "batteryCapacity"),
-        TableRowModel(keyPath: \BatteryManagement.batteryTemperature, name: "batteryTemperature"),
-        TableRowModel(keyPath: \BatteryManagement.chargingInlet, name: "chargingInlet"),
-        TableRowModel(keyPath: \BatteryManagement.grossCapacity, name: "grossCapacity"),
-        TableRowModel(keyPath: \BatteryManagement.lowBatteryLevel, name: "lowBatteryLevel"),
-        TableRowModel(keyPath: \BatteryManagement.netCapacity, name: "netCapacity"),
-        TableRowModel(keyPath: \BatteryManagement.nominalVoltage, name: "nominalVoltage"),
-        TableRowModel(keyPath: \BatteryManagement.referentVoltage, name: "referentVoltage"),
-
-        TableRowModel(keyPath: \BatteryManagement.stateOfCharge, name: "stateOfCharge", children: [
-            TableRowModel(keyPath: \BatteryManagement.stateOfCharge?.current, name: "current"),
-            TableRowModel(keyPath: \BatteryManagement.stateOfCharge?.displayed, name: "displayed"),
-            TableRowModel(keyPath: \BatteryManagement.stateOfCharge?.target, name: "target"),
+    let model = TableRowModel(name: "vehicle", children: [
+        TableRowModel(name: "cabin", children: [
+            TableRowModel(name: "infotainment", children: [
+                TableRowModel(name: "navigation", children: [
+                    TableRowModel(name: "currentLocation", children: [
+                        TableRowModel(name: "longitude"),
+                        TableRowModel(name: "latitude"),
+                        TableRowModel(name: "altitude")
+                    ])
+                ])
+            ])
         ]),
+
+        TableRowModel(name: "drivetrain", children: [
+            TableRowModel(name: "transmission", children: [
+                TableRowModel(name: "speed")
+            ]),
+
+            TableRowModel(name: "fuelSystem", children: [
+                TableRowModel(name: "level")
+            ])
+        ]),
+
+        TableRowModel(name: "acceleration", children: [
+            TableRowModel(name: "longitudinal"),
+            TableRowModel(name: "lateral"),
+            TableRowModel(name: "vertical")
+        ]),
+
+        TableRowModel(name: "adas", children: [
+            TableRowModel(name: "abs", children: [
+                TableRowModel(name: "isEngaged")
+            ])
+        ]),
+
+        TableRowModel(name: "obd", children: [
+            TableRowModel(name: "coolantTemperature")
+        ]),
+
+        TableRowModel(name: "travelledDistance")
     ])
 
 
     func sendRequest<T>(type: T.Type) where T: GraphQLType {
-        // TODO: execute on a bg-thread
-        guard let operation = graphQLOperation else {
+        guard let operation = graphQLOperation,
+              let url = URL(string: urlStr) else {
             return
         }
 
-        let client = AlamofireClient(baseUrl: urlStr, session: .default)
-        let autoGraph = AutoGraph(client: client)
-        let request = GraphQLRequest<T>(operation: operation)
+        let request = VSSGraphQLRequest<T>(operation: operation, rootKeyPath: "data.vehicle")
 
-        autoGraph.send(request) {
+        request.send(url: url) {
             switch $0 {
             case .failure(let error):
+                print(error)
                 self.error = error
-
+                
             case .success(let result):
                 self.error = nil
                 self.model.update(result: result)
@@ -62,15 +83,13 @@ class AppContext: ObservableObject {
 
 private extension AppContext {
 
-    var graphQLOperation: AutoGraphQL.Operation? {
+    var graphQLOperation: VSSGraphQLOperation? {
         guard model.isSelected else {
             return nil
         }
 
-        return AutoGraphQL.Operation(type: .query, name: "DemoQuery", selectionSet: [
-            Object(name: "vehicle", selectionSet: [
-                    Object(name: "drivetrain", selectionSet: [model.graphQLSelectionSet ?? nil].compactMap { $0 })
-            ])
-        ])
+        return VSSGraphQLOperation(type: .query, name: "DemoQuery", selectionSet:
+            [model.graphQLSelectionSet ?? nil].compactMap { $0 }
+        )
     }
 }

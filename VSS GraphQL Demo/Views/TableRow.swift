@@ -8,10 +8,10 @@
 import SwiftUI
 
 
-struct TableRow<Root>: View {
+struct TableRow: View {
 
     @EnvironmentObject var context: AppContext
-    @State var row: TableRowModel<Root>
+    @State var row: TableRowModel
 
 
     var body: some View {

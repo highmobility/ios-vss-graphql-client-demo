@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import VSSGraphQLClient
 
 
 struct SendButton: View {
@@ -24,7 +25,7 @@ struct SendButton: View {
                         context.objectWillChange.send()
                     }
                     else {
-                        context.sendRequest(type: BatteryManagement.self)
+                        context.sendRequest(type: Vehicle.self)
                     }
                 }, label: {
                     VStack {

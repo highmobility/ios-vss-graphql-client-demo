@@ -11,21 +11,12 @@
         }
       },
       {
-        "package": "Artemis",
-        "repositoryURL": "https://github.com/Saelyria/Artemis",
-        "state": {
-          "branch": "master",
-          "revision": "b77b02f7be645d91de703acc67ff7b24b90112f1",
-          "version": null
-        }
-      },
-      {
         "package": "AutoGraph",
         "repositoryURL": "https://github.com/remind101/AutoGraph.git",
         "state": {
-          "branch": null,
-          "revision": "aff3dbd2f8f199c46111792a99f0d702ca65a515",
-          "version": "0.13.0"
+          "branch": "master",
+          "revision": "91591faeb275a8c5a2454cb225815057d3b36ffa",
+          "version": null
         }
       },
       {
@@ -38,11 +29,20 @@
         }
       },
       {
+        "package": "Starscream",
+        "repositoryURL": "https://github.com/daltoniam/Starscream.git",
+        "state": {
+          "branch": null,
+          "revision": "df8d82047f6654d8e4b655d1b1525c64e1059d21",
+          "version": "4.0.4"
+        }
+      },
+      {
         "package": "VSSGraphQL",
-        "repositoryURL": "https://github.com/highmobility/vss-graphql-client-swift",
+        "repositoryURL": "git@github.com:highmobility/vss-graphql-client-swift.git",
         "state": {
           "branch": "master",
-          "revision": "b89ea84a46ceb9ba6a30a33d2047d55e3cbf1fbe",
+          "revision": "0c5182ae7a96da42ce18ebc9073d486e75abf9d2",
           "version": null
         }
       }

@@ -9,12 +9,11 @@ import AutoGraphQL
 import Foundation
 
 
-class TableRowModel<Root>: Identifiable, ObservableObject {
+class TableRowModel: Identifiable, ObservableObject {
 
-    let keyPath: PartialKeyPath<Root>
     let name: String
 
-    var children: [TableRowModel<Root>]? = nil
+    var children: [TableRowModel]? = nil
     var state: TableRowModelState = .deselected
 
 
@@ -90,12 +89,10 @@ class TableRowModel<Root>: Identifiable, ObservableObject {
     }
 
 
-    init(keyPath: PartialKeyPath<Root>,
-         name: String,
-         children: [TableRowModel<Root>]? = nil,
+    init(name: String,
+         children: [TableRowModel]? = nil,
          state: TableRowModelState = .deselected) {
 
-        self.keyPath = keyPath
         self.name = name
         self.children = children
         self.state = state

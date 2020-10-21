@@ -7,43 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		203A7F19254046D00006DA51 /* VSSGraphQLClient in Frameworks */ = {isa = PBXBuildFile; productRef = 203A7F18254046D00006DA51 /* VSSGraphQLClient */; };
 		205417CC2524CC7C00B3AD76 /* URLChangingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205417CB2524CC7C00B3AD76 /* URLChangingView.swift */; };
 		205417D02524D20200B3AD76 /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205417CF2524D20200B3AD76 /* VisualEffectView.swift */; };
-		205C9802252484050010D891 /* GraphQLType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205C9801252484050010D891 /* GraphQLType.swift */; };
-		205C9806252484160010D891 /* GraphQLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205C9805252484160010D891 /* GraphQLRequest.swift */; };
 		205C980A25249EB20010D891 /* ResponseProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205C980925249EB20010D891 /* ResponseProperty.swift */; };
 		205C981A2524A0670010D891 /* MainTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205C98192524A0670010D891 /* MainTable.swift */; };
 		205C981D2524A0910010D891 /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205C981C2524A0910010D891 /* MenuButton.swift */; };
 		205C98202524A0A20010D891 /* SendButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205C981F2524A0A20010D891 /* SendButton.swift */; };
 		205C98232524A0B80010D891 /* TableRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205C98222524A0B80010D891 /* TableRow.swift */; };
-		209B1849251B86E400D84963 /* ChargingInlet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209B1848251B86E400D84963 /* ChargingInlet.swift */; };
-		209B184C251B86F100D84963 /* StateOfCharge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209B184B251B86F100D84963 /* StateOfCharge.swift */; };
-		209B184F251B86FF00D84963 /* BatteryManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209B184E251B86FF00D84963 /* BatteryManagement.swift */; };
 		20AE948525247443005701B7 /* AppContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AE948425247443005701B7 /* AppContext.swift */; };
 		20AE948B25247486005701B7 /* TableRowModelState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AE948A25247486005701B7 /* TableRowModelState.swift */; };
 		20AE948E2524749A005701B7 /* TableRowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AE948D2524749A005701B7 /* TableRowModel.swift */; };
 		20AE94932524753A005701B7 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AE94922524753A005701B7 /* MainView.swift */; };
 		20AE949A25247581005701B7 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AE949925247581005701B7 /* Color+Extensions.swift */; };
-		20B17F5B251A433C00B1D7CF /* AutoGraphQL in Frameworks */ = {isa = PBXBuildFile; productRef = 20B17F5A251A433C00B1D7CF /* AutoGraphQL */; };
 		20BFD5922518A3E400547C66 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BFD5912518A3E400547C66 /* App.swift */; };
 		20BFD5962518A3E500547C66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20BFD5952518A3E500547C66 /* Assets.xcassets */; };
 		20BFD5992518A3E500547C66 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20BFD5982518A3E500547C66 /* Preview Assets.xcassets */; };
-		20BFD5A62518A74600547C66 /* VSSGraphQL in Frameworks */ = {isa = PBXBuildFile; productRef = 20BFD5A52518A74600547C66 /* VSSGraphQL */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		205417CB2524CC7C00B3AD76 /* URLChangingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLChangingView.swift; sourceTree = "<group>"; };
 		205417CF2524D20200B3AD76 /* VisualEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectView.swift; sourceTree = "<group>"; };
-		205C9801252484050010D891 /* GraphQLType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLType.swift; sourceTree = "<group>"; };
-		205C9805252484160010D891 /* GraphQLRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLRequest.swift; sourceTree = "<group>"; };
 		205C980925249EB20010D891 /* ResponseProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseProperty.swift; sourceTree = "<group>"; };
 		205C98192524A0670010D891 /* MainTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTable.swift; sourceTree = "<group>"; };
 		205C981C2524A0910010D891 /* MenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
 		205C981F2524A0A20010D891 /* SendButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendButton.swift; sourceTree = "<group>"; };
 		205C98222524A0B80010D891 /* TableRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableRow.swift; sourceTree = "<group>"; };
-		209B1848251B86E400D84963 /* ChargingInlet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingInlet.swift; sourceTree = "<group>"; };
-		209B184B251B86F100D84963 /* StateOfCharge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateOfCharge.swift; sourceTree = "<group>"; };
-		209B184E251B86FF00D84963 /* BatteryManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryManagement.swift; sourceTree = "<group>"; };
 		20AE948425247443005701B7 /* AppContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContext.swift; sourceTree = "<group>"; };
 		20AE948A25247486005701B7 /* TableRowModelState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableRowModelState.swift; sourceTree = "<group>"; };
 		20AE948D2524749A005701B7 /* TableRowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableRowModel.swift; sourceTree = "<group>"; };
@@ -62,22 +51,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20B17F5B251A433C00B1D7CF /* AutoGraphQL in Frameworks */,
-				20BFD5A62518A74600547C66 /* VSSGraphQL in Frameworks */,
+				203A7F19254046D00006DA51 /* VSSGraphQLClient in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		205C9800252483F50010D891 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				205C9801252484050010D891 /* GraphQLType.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
 		205C981025249FC70010D891 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,20 +103,9 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		209B1854251B872300D84963 /* Requests */ = {
-			isa = PBXGroup;
-			children = (
-				205C9805252484160010D891 /* GraphQLRequest.swift */,
-			);
-			path = Requests;
-			sourceTree = "<group>";
-		};
 		20AE948825247472005701B7 /* VSS */ = {
 			isa = PBXGroup;
 			children = (
-				209B184E251B86FF00D84963 /* BatteryManagement.swift */,
-				209B1848251B86E400D84963 /* ChargingInlet.swift */,
-				209B184B251B86F100D84963 /* StateOfCharge.swift */,
 			);
 			path = VSS;
 			sourceTree = "<group>";
@@ -163,8 +132,6 @@
 				205C981225249FDA0010D891 /* Assets */,
 				205C981025249FC70010D891 /* Extensions */,
 				209B1851251B870C00D84963 /* Models */,
-				205C9800252483F50010D891 /* Protocols */,
-				209B1854251B872300D84963 /* Requests */,
 				205C98172524A0540010D891 /* Views */,
 				20BFD5912518A3E400547C66 /* App.swift */,
 			);
@@ -196,8 +163,7 @@
 			);
 			name = "VSS GraphQL Demo";
 			packageProductDependencies = (
-				20BFD5A52518A74600547C66 /* VSSGraphQL */,
-				20B17F5A251A433C00B1D7CF /* AutoGraphQL */,
+				203A7F18254046D00006DA51 /* VSSGraphQLClient */,
 			);
 			productName = "hm-vss-client-demo";
 			productReference = 20BFD58E2518A3E400547C66 /* VSS GraphQL Demo.app */;
@@ -227,8 +193,7 @@
 			);
 			mainGroup = 20BFD5852518A3E400547C66;
 			packageReferences = (
-				20BFD5A42518A74600547C66 /* XCRemoteSwiftPackageReference "vss-graphql-client-swift" */,
-				20B17F59251A433C00B1D7CF /* XCRemoteSwiftPackageReference "AutoGraph" */,
+				203A7F17254046D00006DA51 /* XCRemoteSwiftPackageReference "vss-graphql-client-swift" */,
 			);
 			productRefGroup = 20BFD58F2518A3E400547C66 /* Products */;
 			projectDirPath = "";
@@ -256,19 +221,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				209B184F251B86FF00D84963 /* BatteryManagement.swift in Sources */,
 				20AE94932524753A005701B7 /* MainView.swift in Sources */,
 				20AE948525247443005701B7 /* AppContext.swift in Sources */,
 				205417CC2524CC7C00B3AD76 /* URLChangingView.swift in Sources */,
-				205C9802252484050010D891 /* GraphQLType.swift in Sources */,
 				205C980A25249EB20010D891 /* ResponseProperty.swift in Sources */,
 				205C981A2524A0670010D891 /* MainTable.swift in Sources */,
-				209B1849251B86E400D84963 /* ChargingInlet.swift in Sources */,
 				205C981D2524A0910010D891 /* MenuButton.swift in Sources */,
-				205C9806252484160010D891 /* GraphQLRequest.swift in Sources */,
 				205C98232524A0B80010D891 /* TableRow.swift in Sources */,
 				205417D02524D20200B3AD76 /* VisualEffectView.swift in Sources */,
-				209B184C251B86F100D84963 /* StateOfCharge.swift in Sources */,
 				20AE948B25247486005701B7 /* TableRowModelState.swift in Sources */,
 				20AE949A25247581005701B7 /* Color+Extensions.swift in Sources */,
 				205C98202524A0A20010D891 /* SendButton.swift in Sources */,
@@ -470,17 +430,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		20B17F59251A433C00B1D7CF /* XCRemoteSwiftPackageReference "AutoGraph" */ = {
+		203A7F17254046D00006DA51 /* XCRemoteSwiftPackageReference "vss-graphql-client-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/remind101/AutoGraph.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.13.0;
-			};
-		};
-		20BFD5A42518A74600547C66 /* XCRemoteSwiftPackageReference "vss-graphql-client-swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/highmobility/vss-graphql-client-swift";
+			repositoryURL = "git@github.com:highmobility/vss-graphql-client-swift.git";
 			requirement = {
 				branch = master;
 				kind = branch;
@@ -489,15 +441,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		20B17F5A251A433C00B1D7CF /* AutoGraphQL */ = {
+		203A7F18254046D00006DA51 /* VSSGraphQLClient */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 20B17F59251A433C00B1D7CF /* XCRemoteSwiftPackageReference "AutoGraph" */;
-			productName = AutoGraphQL;
-		};
-		20BFD5A52518A74600547C66 /* VSSGraphQL */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 20BFD5A42518A74600547C66 /* XCRemoteSwiftPackageReference "vss-graphql-client-swift" */;
-			productName = VSSGraphQL;
+			package = 203A7F17254046D00006DA51 /* XCRemoteSwiftPackageReference "vss-graphql-client-swift" */;
+			productName = VSSGraphQLClient;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
