@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		203A7F1D254049800006DA51 /* VSSGraphQLClient in Frameworks */ = {isa = PBXBuildFile; productRef = 203A7F1C254049800006DA51 /* VSSGraphQLClient */; };
 		205417CC2524CC7C00B3AD76 /* URLChangingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205417CB2524CC7C00B3AD76 /* URLChangingView.swift */; };
 		205417D02524D20200B3AD76 /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205417CF2524D20200B3AD76 /* VisualEffectView.swift */; };
 		205C980A25249EB20010D891 /* ResponseProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205C980925249EB20010D891 /* ResponseProperty.swift */; };
@@ -20,6 +19,7 @@
 		20AE948E2524749A005701B7 /* TableRowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AE948D2524749A005701B7 /* TableRowModel.swift */; };
 		20AE94932524753A005701B7 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AE94922524753A005701B7 /* MainView.swift */; };
 		20AE949A25247581005701B7 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AE949925247581005701B7 /* Color+Extensions.swift */; };
+		20B56D9D254168CD00ED2AC6 /* VSSGraphQLClient in Frameworks */ = {isa = PBXBuildFile; productRef = 20B56D9C254168CD00ED2AC6 /* VSSGraphQLClient */; };
 		20BFD5922518A3E400547C66 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BFD5912518A3E400547C66 /* App.swift */; };
 		20BFD5962518A3E500547C66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20BFD5952518A3E500547C66 /* Assets.xcassets */; };
 		20BFD5992518A3E500547C66 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20BFD5982518A3E500547C66 /* Preview Assets.xcassets */; };
@@ -51,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				203A7F1D254049800006DA51 /* VSSGraphQLClient in Frameworks */,
+				20B56D9D254168CD00ED2AC6 /* VSSGraphQLClient in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,7 +155,7 @@
 			);
 			name = "VSS GraphQL Demo";
 			packageProductDependencies = (
-				203A7F1C254049800006DA51 /* VSSGraphQLClient */,
+				20B56D9C254168CD00ED2AC6 /* VSSGraphQLClient */,
 			);
 			productName = "hm-vss-client-demo";
 			productReference = 20BFD58E2518A3E400547C66 /* VSS GraphQL Demo.app */;
@@ -185,7 +185,7 @@
 			);
 			mainGroup = 20BFD5852518A3E400547C66;
 			packageReferences = (
-				203A7F1B254049800006DA51 /* XCRemoteSwiftPackageReference "hm-vss-graphql-client-swift" */,
+				20B56D9B254168CD00ED2AC6 /* XCRemoteSwiftPackageReference "vss-graphql-client-swift" */,
 			);
 			productRefGroup = 20BFD58F2518A3E400547C66 /* Products */;
 			projectDirPath = "";
@@ -422,9 +422,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		203A7F1B254049800006DA51 /* XCRemoteSwiftPackageReference "hm-vss-graphql-client-swift" */ = {
+		20B56D9B254168CD00ED2AC6 /* XCRemoteSwiftPackageReference "vss-graphql-client-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "file:///Users/mikk/Desktop/Workspace.nosync/Source/hm-vss-graphql-client-swift";
+			repositoryURL = "git@github.com:highmobility/vss-graphql-client-swift.git";
 			requirement = {
 				branch = master;
 				kind = branch;
@@ -433,9 +433,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		203A7F1C254049800006DA51 /* VSSGraphQLClient */ = {
+		20B56D9C254168CD00ED2AC6 /* VSSGraphQLClient */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 203A7F1B254049800006DA51 /* XCRemoteSwiftPackageReference "hm-vss-graphql-client-swift" */;
+			package = 20B56D9B254168CD00ED2AC6 /* XCRemoteSwiftPackageReference "vss-graphql-client-swift" */;
 			productName = VSSGraphQLClient;
 		};
 /* End XCSwiftPackageProductDependency section */
